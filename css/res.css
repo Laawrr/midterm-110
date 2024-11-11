@@ -15,7 +15,8 @@
     }
 
     button {
-        max-width: 50% !important; 
+        width: 100px !important;
+        max-width: 60% !important; 
     }
     .card {
         max-width: 200% !important;
@@ -41,6 +42,10 @@
     #contact p {
         font-size: 110% !important;
     }
+    #contact {
+        height: auto;
+    }
+
 }
 
 @media (max-width: 576px) {
