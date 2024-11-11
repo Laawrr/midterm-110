@@ -15,9 +15,10 @@ $(document).ready(function () {
 
 
 // Scroll Animations for Sections
-document.addEventListener("DOMContentLoaded", function () {
-  const sections = document.querySelectorAll("section");
-  sections.forEach(section => section.classList.add("fade-in"));
+  sections.forEach((section, index) => {
+    section.classList.add("fade-in");
+    section.style.transitionDelay = `${index * 0.1}s`;
+  });
 
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -30,6 +31,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   sections.forEach(section => observer.observe(section));
 });
+
+// Smooth scrolling
+document.documentElement.style.scrollBehavior = "smooth";
 
 // Text Animation
 const textWrapperMl3 = document.querySelector(".ml3");
