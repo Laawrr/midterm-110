@@ -15,7 +15,7 @@
     }
 
     button {
-        width: 100px !important; 
+        max-width: 50% !important; 
     }
     .card {
         max-width: 200% !important;
