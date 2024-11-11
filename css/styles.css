@@ -458,6 +458,7 @@ nav .menu li a:active {
   margin: 50px 0 0;
   width: 100%;
   position: relative;
+  height: 90vh;
 }
 
 #contact h2 {
