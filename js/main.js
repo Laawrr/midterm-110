@@ -15,10 +15,9 @@ $(document).ready(function () {
 
 
 // Scroll Animations for Sections
-  sections.forEach((section, index) => {
-    section.classList.add("fade-in");
-    section.style.transitionDelay = `${index * 0.1}s`;
-  });
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll("section");
+  sections.forEach(section => section.classList.add("fade-in"));
 
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
